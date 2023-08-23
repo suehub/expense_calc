@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/expense_calc/static/css/main.6fe4a441.css",
+    "main.js": "/expense_calc/static/js/main.853cade9.js",
+    "static/js/787.c17c881f.chunk.js": "/expense_calc/static/js/787.c17c881f.chunk.js",
+    "index.html": "/expense_calc/index.html",
+    "main.6fe4a441.css.map": "/expense_calc/static/css/main.6fe4a441.css.map",
+    "main.853cade9.js.map": "/expense_calc/static/js/main.853cade9.js.map",
+    "787.c17c881f.chunk.js.map": "/expense_calc/static/js/787.c17c881f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fe4a441.css",
+    "static/js/main.853cade9.js"
+  ]
+}
