@@ -3,7 +3,7 @@ import ExpenseItem from "./ExpenseItem.js";
 import "./ExpenseList.css";
 import { MdDelete } from "react-icons/md";
 
-const ExpenseList = ({ expenses, handleDelete }) => {
+const ExpenseList = ({ expenses, handleEdit, handleDelete, clearItems }) => {
   // console.log(expenses);
   return (
     <>
@@ -13,15 +13,18 @@ const ExpenseList = ({ expenses, handleDelete }) => {
             <ExpenseItem
               key={expense.id}
               expense={expense}
+              handleEdit={handleEdit}
               handleDelete={handleDelete}
             />
           );
         })}
       </ul>
-      <button className="btn">
-        목록 지우기
-        <MdDelete />
-      </button>
+      {expenses.length > 0 && (
+        <button className="btn" onClick={clearItems}>
+          목록 지우기
+          <MdDelete />
+        </button>
+      )}
     </>
   );
 };
